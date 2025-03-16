@@ -22,6 +22,7 @@
 #include "chapters/related_work.typ"
 #include "chapters/conclusion.typ"
 
+#bibliography("bibliography.bib", style: "association-for-computing-machinery")
 
 #include "chapters/appendix.typ"
 

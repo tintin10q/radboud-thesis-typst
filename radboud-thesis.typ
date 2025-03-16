@@ -20,7 +20,7 @@
   set heading(numbering: "1.1")
   show heading.where(level: 1): it => {
     colbreak(weak: true)
-    if counter(heading).get().at(0) > 0 {
+    if it.numbering != none {
       v(3em)
       block(text(size: 20pt, [Chapter #counter(heading).display()]))
       v(1em)
