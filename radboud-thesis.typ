@@ -18,6 +18,7 @@
 
 
   set heading(numbering: "1.1")
+  show heading.where(level: 1): set heading(supplement: [Chapter])
   show heading.where(level: 1): it => {
     colbreak(weak: true)
     if it.numbering != none {
@@ -52,6 +53,13 @@
       it.body() + box(width: 1fr, inset: (left: 5pt), it.fill) + box(width: 1.5em, align(right, it.page())),
     ),
   )
+
+
+  let appendix(body) = {
+    set heading(numbering: "A.1", supplement: [Appendix])
+    counter(heading).update(0)
+    body
+  }
 
   // Title Page
   align(center)[
