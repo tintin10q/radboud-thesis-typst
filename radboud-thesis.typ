@@ -88,5 +88,16 @@
     #text(size: 12pt)[#date.display("[month repr:long] [day], [year]")]
   ]
 
+  pagebreak()
+
+  v(-8.5em)
+  align(center + horizon)[
+    #block([*Abstract*])
+    #v(1em)
+    #align(left, abstract)
+  ]
+
+  pagebreak()
+
   body
 }
