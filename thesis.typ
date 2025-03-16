@@ -8,30 +8,20 @@
     student-number: "s1234567",
   ),
   supervisors: (("Supervisor", "dr. Dewey Duck"), ("Second reader", "prof. dr. Louie Duck")),
-  abstract: include "abstract.typ",
+  abstract: include "chapters/abstract.typ",
   thesis-type: "Master",
   study: "Computing Science",
   date: datetime.today(),
 )
 
-#pagebreak()
-
 #outline()
 
-#pagebreak()
+#include "chapters/introduction.typ"
+#include "chapters/preliminaries.typ"
+#include "chapters/results.typ"
+#include "chapters/related_work.typ"
+#include "chapters/conclusion.typ"
 
-= Abstract
 
-
-#lorem(50)
-
-#pagebreak()
-
-= Introduction
-#lorem(80)
-
-#lorem(80)
-
-== Intro
-
+#include "chapters/appendix.typ"
 

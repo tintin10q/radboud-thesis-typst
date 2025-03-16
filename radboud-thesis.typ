@@ -18,7 +18,8 @@
 
 
   set heading(numbering: "1.1")
-  show heading.where(level: 1): it => block({
+  show heading.where(level: 1): it => {
+    colbreak(weak: true)
     if counter(heading).get().at(0) > 0 {
       v(3em)
       block(text(size: 20pt, [Chapter #counter(heading).display()]))
@@ -26,7 +27,7 @@
     }
     block(text(size: 26pt, [#it.body]))
     v(1em)
-  })
+  }
 
   show outline: it => {
     show heading: pad.with(bottom: 1.25em)
