@@ -7,7 +7,7 @@
     name: "Author",
     student-number: "s1234567",
   ),
-  supervisors: (("Supervisor", "Dr. Dewey Duck"), ("Second reader", "Prof. Dr. Louie Duck")),
+  supervisors: (("Supervisor", "dr. Dewey Duck"), ("Second reader", "prof. dr. Louie Duck")),
   abstract: include "abstract.typ",
   thesis-type: "Master",
   study: "Computing Science",
