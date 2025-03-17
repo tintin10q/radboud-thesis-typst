@@ -1,4 +1,4 @@
-#import "radboud-thesis.typ": radboud-thesis
+#import "radboud-thesis.typ": radboud-thesis, appendix
 
 #show: radboud-thesis.with(
   title: "Title",
@@ -23,6 +23,8 @@
 #include "chapters/conclusion.typ"
 
 #bibliography("bibliography.bib", style: "association-for-computing-machinery")
+
+#show: appendix
 
 #include "chapters/appendix.typ"
 

@@ -54,13 +54,6 @@
     ),
   )
 
-
-  let appendix(body) = {
-    set heading(numbering: "A.1", supplement: [Appendix])
-    counter(heading).update(0)
-    body
-  }
-
   // Title Page
   align(center)[
     #text(size: 17pt)[#smallcaps[#thesis-type's Thesis\ #study]]
@@ -108,5 +101,22 @@
 
   pagebreak()
 
+  body
+}
+
+#let appendix(body) = {
+  set heading(numbering: "A.1", supplement: [Appendix])
+  show heading.where(level: 1): set heading(supplement: [Appendix])
+  show heading.where(level: 1): it => {
+    colbreak(weak: true)
+    if it.numbering != none {
+      v(3em)
+      block(text(size: 20pt, [Appendix #counter(heading).display()]))
+      v(1em)
+    }
+    block(text(size: 26pt, [#it.body]))
+    v(1em)
+  }
+  counter(heading).update(0)
   body
 }
