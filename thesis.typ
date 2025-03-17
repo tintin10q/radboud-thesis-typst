@@ -2,7 +2,7 @@
 
 #show: radboud-thesis.with(
   title: "Title",
-  subtitle: "Ez pz",
+  subtitle: "Subtitle",
   author: (
     name: "Author",
     student-number: "s1234567",
