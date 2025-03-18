@@ -8,7 +8,10 @@
     student-number: "s1234567",
   ),
   supervisors: (("Supervisor", "dr. Dewey Duck"), ("Second reader", "prof. dr. Louie Duck")),
-  abstract: include "chapters/abstract.typ",
+  abstract: [Template for Radboud University Bachelor's/Master's thesis
+
+    Source code can be found at https://github.com/Jorritboer/radboud-thesis-typst.
+  ],
   thesis-type: "Master",
   study: "Computing Science",
   date: datetime.today(),
@@ -16,15 +19,25 @@
 
 #outline()
 
-#include "chapters/introduction.typ"
-#include "chapters/preliminaries.typ"
-#include "chapters/results.typ"
-#include "chapters/related_work.typ"
-#include "chapters/conclusion.typ"
+= Introduction
+#lorem(100)
+
+= Preliminaries
+#lorem(100)
+
+= Results
+#lorem(100)
+
+= Related Work
+#lorem(100)
+
+= Conclusion
+#lorem(100)
 
 #bibliography("bibliography.bib", style: "association-for-computing-machinery")
 
 #show: appendix
 
-#include "chapters/appendix.typ"
+= Proofs
+#lorem(100)
 
