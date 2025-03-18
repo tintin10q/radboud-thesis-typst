@@ -22,6 +22,8 @@
 = Introduction
 #lorem(100)
 
+Reference @reference
+
 = Preliminaries
 #lorem(100)
 

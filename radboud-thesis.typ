@@ -11,11 +11,7 @@
 ) = {
   set document(title: title, author: author.name)
 
-  // make everything look as much like LaTeX as possible, if you want
-  set par(leading: 0.55em, spacing: 0.55em, first-line-indent: 1.8em, justify: true)
-  set text(font: "New Computer Modern")
-  show raw: set text(font: "New Computer Modern Mono")
-
+  set par(justify: true)
 
   set heading(numbering: "1.1")
   show heading.where(level: 1): set heading(supplement: [Chapter])
