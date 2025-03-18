@@ -12,7 +12,7 @@
 
     Source code can be found at https://github.com/Jorritboer/radboud-thesis-typst.
   ],
-  thesis-type: "Master",
+  thesis-type: "Master's Thesis",
   study: "Computing Science",
   date: datetime.today(),
 )

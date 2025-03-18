@@ -58,13 +58,13 @@
     #v(2em)
     #line(length: 100%, stroke: 0.4mm)
     #v(.5em)
-    #text(size: 20pt, weight: "bold")[#title]\
-    #text(size: 12pt)[#smallcaps[#subtitle]]
+    #text(size: 24pt, weight: "bold")[#title]\
+    #text(size: 14pt)[#smallcaps[#subtitle]]
     #v(.5em)
     #line(length: 100%, stroke: 0.4mm)
     #v(2em)
     #grid(
-      columns: (40%, 40%),
+      columns: (45%, 45%),
       align(left)[
         _Author:_\
         #author.name\
