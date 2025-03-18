@@ -1,4 +1,4 @@
-#import "radboud-thesis.typ": radboud-thesis, appendix
+#import "@preview/now-radboud-thesis:0.1.0": radboud-thesis, appendix
 
 #show: radboud-thesis.with(
   title: "Title",
